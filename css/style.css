@@ -34,7 +34,7 @@ img {
   margin: 0 auto;
 }
 .header {
-  background-color: #f4f4f4;
+  background: linear-gradient(180deg, #FEFDFF 0%, #C3D7EF 33%, #AECAEA 44%, #9CBDE2 55%, #84ACD9 67%, #6391C9 75%, #2F5BA9 88%, #12469B 95%, #083F96 100%);
   padding: 20px 0;
   text-align: center;
   height: 448px;
@@ -714,7 +714,7 @@ img {
   }
   .header {
     height: auto;
-    padding: 20px 0;
+    padding: 100px 0;
   }
   .cards-grid .card {
     width: 100%;
