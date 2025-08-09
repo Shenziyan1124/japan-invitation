@@ -625,6 +625,10 @@ img {
 }
 /* 平板设备 (例如，宽度在 768px 到 991px 之间) */
 @media (min-width: 768px) and (max-width: 991px) {
+  body {
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
   .container {
     max-width: 750px;
   }
@@ -701,6 +705,10 @@ img {
 }
 /* 小屏幕设备 (例如，宽度小于 768px) */
 @media (max-width: 767px) {
+  body {
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
   .container {
     width: 90%;
   }
