@@ -34,10 +34,27 @@ img {
   margin: 0 auto;
 }
 .header {
-  background: linear-gradient(180deg, #FEFDFF 0%, #C3D7EF 33%, #AECAEA 44%, #9CBDE2 55%, #84ACD9 67%, #6391C9 75%, #2F5BA9 88%, #12469B 95%, #083F96 100%);
-  padding: 20px 0;
-  text-align: center;
   height: 448px;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-position: 46%;
+  background-repeat: no-repeat;
+}
+.header img {
+  object-fit: cover;
+  height: 100%;
+}
+.main-content {
+  position: relative;
+}
+.qr-code {
+  position: absolute;
+  top: 50px;
+  right: 2%;
+  z-index: 999;
+  width: 220px;
+  height: 260px;
+  border-radius: 15px;
 }
 /* Section Header */
 .section-header {
@@ -49,13 +66,13 @@ img {
 .section-header h2 {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #3C2D6F;
+  color: #3c2d6f;
 }
 .section-header .icon-group {
   position: relative;
   width: 14px;
   height: 14px;
-  background: #3C2D6F;
+  background: #3c2d6f;
   border-radius: 50%;
   margin-right: 8px;
   flex-shrink: 0;
@@ -65,7 +82,7 @@ img {
   display: inline-block;
   width: 8px;
   height: 8px;
-  background: #3C2D6F;
+  background: #3c2d6f;
   opacity: 0.4;
   position: absolute;
   left: 9px;
@@ -83,17 +100,16 @@ img {
   width: 100%;
   max-width: 455px;
   height: 132px;
-  background: #F2F0F7;
+  background: #f2f0f7;
   border-radius: 80px 15px 80px 15px;
   display: flex;
-  align-items: center;
+  padding-top: 20px;
   position: relative;
 }
 .cards-grid .card .card-logo {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 5px solid #ccc;
   flex-shrink: 0;
   margin-right: 15px;
   position: absolute;
@@ -136,20 +152,19 @@ img {
   align-items: center;
   text-align: center;
   margin-top: 30px;
-  background: linear-gradient(180deg, rgba(129, 97, 175, 0.38) 0%, #463579 29%, #3C2D6F 59%, #3F2E71 79%, rgba(74, 50, 119, 0.38) 100%);
+  background: linear-gradient(180deg, rgba(129, 97, 175, 0.38) 0%, #463579 29%, #3c2d6f 59%, #3f2e71 79%, rgba(74, 50, 119, 0.38) 100%);
   padding: 20px;
   font-weight: bold;
   font-size: 1rem;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 1.5;
-  border-radius: 8px;
 }
 .meeting .meeting-title {
   width: 120px;
   margin-right: 0;
   margin-bottom: 15px;
   font-size: 1.5rem;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 1.2;
 }
 .highlights {
@@ -164,12 +179,10 @@ img {
   width: 100%;
 }
 .highlights .section-center {
-  border: 1px solid #D9D9D9;
   margin-top: 0;
-  padding: 20px;
 }
 .highlights .section-right .sponsor-list {
-  background: #EEEEEE;
+  background: #eeeeee;
   border-radius: 8px;
   padding: 30px 26px;
 }
@@ -178,24 +191,23 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
 }
 .visitor-stats .title {
   width: 100%;
   height: auto;
   padding: 15px;
-  background: #3C2D6F;
+  background: #3c2d6f;
   border-radius: 30px;
   font-weight: bold;
   font-size: 1.5rem;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 1.2;
   text-align: center;
 }
 .visitor-stats .stats-grid {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 0px 86px;
   width: 100%;
 }
 .visitor-stats .stats-grid .stat-item {
@@ -204,11 +216,10 @@ img {
 .visitor-stats .stats-grid .stat-item .bar,
 .visitor-stats .stats-grid .stat-item .pie {
   width: 100%;
-  height: 240px;
-  border: 1px solid #D9D9D9;
 }
-.visitor-stats .stats-grid .stat-item .pie {
-  height: 205px;
+.visitor-stats .stats-grid .stat-item:nth-child(4) .pie {
+  padding-left: 10px;
+  padding-right: 22px;
 }
 .visitor-stats .satisfaction {
   width: 100%;
@@ -236,10 +247,12 @@ img {
   color: #000000;
 }
 .visitor-stats .satisfaction .satisfaction-img {
-  height: 200px;
-  border: 1px solid #D9D9D9;
+  max-height: 200px;
+  border: 1px solid #d9d9d9;
   border-top: none;
   border-radius: 0 0 15px 15px;
+  width: 100%;
+  object-fit: cover;
 }
 .medicine-info {
   display: flex;
@@ -252,11 +265,11 @@ img {
 .medicine-info .title-m {
   padding: 6px 37px;
   margin: 28px auto 18px;
-  background: #3C2D6F;
+  background: #3c2d6f;
   border-radius: 17px;
   font-weight: bold;
   font-size: 1rem;
-  color: #FFFFFF;
+  color: #ffffff;
   max-width: 138px;
   text-align: center;
 }
@@ -285,7 +298,7 @@ img {
 .medicine-info .medicine-cards .card {
   width: 100%;
   max-width: 455px;
-  background: #F2F0F7;
+  background: #f2f0f7;
   border-radius: 15px;
   padding: 20px 30px;
   margin-left: auto;
@@ -319,15 +332,14 @@ img {
 .medicine-info .medicine-all-logo {
   width: 100%;
   max-width: 930px;
-  height: 508px;
-  border: 1px solid #D9D9D9;
+  max-height: 508px;
   margin-left: auto;
   margin-right: auto;
 }
 .medicine-info .medicine-content {
   width: 100%;
   height: auto;
-  background: #F2F0F7;
+  background: #f2f0f7;
   border-radius: 25px 15px 15px 15px;
   position: relative;
   margin-bottom: 20px;
@@ -336,9 +348,9 @@ img {
   position: absolute;
   left: 0;
   padding: 10px 20px;
-  background: linear-gradient(180deg, #6F59A8 0%, #3C2D6F 100%);
+  background: linear-gradient(180deg, #6f59a8 0%, #3c2d6f 100%);
   border-radius: 25px 0px 25px 0px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .medicine-info .medicine-content p {
   padding: 62px 30px 30px 30px;
@@ -356,7 +368,6 @@ img {
   width: 100%;
   max-width: 318px;
   height: 93px;
-  border: 1px solid #D9D9D9;
 }
 .medicine-info .medicine-sinopharm {
   display: flex;
@@ -367,8 +378,7 @@ img {
 .medicine-info .medicine-sinopharm img {
   min-width: 220px;
   height: 220px;
-  background: #FFFFFF;
-  border: 1px solid #EEEEEE;
+  background: #ffffff;
   margin-right: 20px;
   margin-bottom: 20px;
   align-self: center;
@@ -379,12 +389,11 @@ img {
   color: #000000;
   line-height: 1.25rem;
 }
-.medicine-info .medicine-word-map {
+.medicine-info .medicine-world-map {
   margin-top: 30px;
   width: 100%;
   max-width: 930px;
-  height: 453px;
-  border: 1px solid #D9D9D9;
+  max-height: 453px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -397,7 +406,7 @@ img {
   width: 100%;
   max-width: 296px;
   height: 214px;
-  background: #F2F0F7;
+  background: #f2f0f7;
   border-radius: 15px;
   padding: 20px 0px 20px 20px;
   color: #000000;
@@ -431,7 +440,6 @@ img {
   color: #fff;
   flex-direction: column;
   gap: 20px;
-  padding: 20px 0;
 }
 .buttons-group .button {
   display: flex;
@@ -440,7 +448,7 @@ img {
   width: 100%;
   max-width: 308px;
   height: 88px;
-  background: linear-gradient(180deg, #6F59A8 0%, #3C2D6F 100%);
+  background: linear-gradient(180deg, #6f59a8 0%, #3c2d6f 100%);
   box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   padding: 20px;
@@ -449,7 +457,8 @@ img {
   margin-right: 0;
 }
 .buttons-group .button .iconfont {
-  font-size: 20px;
+  width: 20px;
+  height: 20px;
 }
 /* 大屏设备 (例如，宽度大于或等于 1200px) - 适配1920px设计稿 */
 @media (min-width: 1200px) {
@@ -467,9 +476,6 @@ img {
   .scale-exhibition .scale-list {
     flex-direction: row;
     justify-content: space-between;
-  }
-  .scale-exhibition .scale-list:nth-of-type(1) {
-    margin-top: 10px;
   }
   .scale-exhibition .scale-list li {
     flex: 1;
@@ -499,6 +505,9 @@ img {
     width: 30%;
     margin-top: 30px;
   }
+  .highlights .section-center img {
+    width: 100%;
+  }
   .highlights .section-right {
     width: 30%;
   }
@@ -525,9 +534,8 @@ img {
     padding: 0 30px;
   }
   .visitor-stats .satisfaction .satisfaction-text p:nth-child(1) {
-    width: 175px;
+    max-width: 175px;
     margin-bottom: 0;
-    margin-right: 30px;
     text-align: left;
   }
   .medicine-info .medicine-cards .card {
@@ -561,8 +569,9 @@ img {
   .buttons-group .button {
     width: 308px;
   }
-  .buttons-group .button:nth-child(1) {
-    margin-right: 40px;
+  .top-buttons {
+    padding-bottom: 20px;
+    padding-top: 50px;
   }
 }
 /* 中等屏幕设备 (例如，宽度在 992px 到 1199px 之间) */
@@ -570,15 +579,23 @@ img {
   .container {
     max-width: 930px;
   }
+  .qr-code {
+    width: 170px;
+    height: 200px;
+    right: 2%;
+  }
   .buttons-group {
     flex-direction: row;
-    padding: 0;
   }
   .buttons-group .button {
     width: 308px;
   }
   .buttons-group .button:nth-child(1) {
     margin-right: 40px;
+  }
+  .top-buttons {
+    padding-bottom: 20px;
+    padding-top: 50px;
   }
   .cards-grid {
     display: grid;
@@ -606,6 +623,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    gap: 0 50px;
   }
   .visitor-stats .stats-grid .stat-item {
     width: 47%;
@@ -617,10 +635,20 @@ img {
     flex-direction: row;
   }
   .highlights {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .highlights .section-left,
+  .highlights .section-right {
+    width: 30%;
   }
   .highlights .section-center {
-    margin: 20px 0 0;
+    width: 30%;
+    margin: 30px 0px 0;
+  }
+  .highlights .section-center img {
+    max-width: 100%;
+    height: auto;
   }
 }
 /* 平板设备 (例如，宽度在 768px 到 991px 之间) */
@@ -634,6 +662,14 @@ img {
   }
   h2 {
     font-size: 1.75rem;
+  }
+  .header {
+    height: 380px;
+  }
+  .qr-code {
+    width: 140px;
+    height: 170px;
+    right: 2%;
   }
   .cards-grid {
     display: grid;
@@ -662,10 +698,19 @@ img {
     width: 120px;
   }
   .highlights {
-    flex-direction: column;
+    flex-direction: row;
+  }
+  .highlights .section-left,
+  .highlights .section-right {
+    width: 33.3%;
   }
   .highlights .section-center {
-    margin: 20px 0 0;
+    width: 30%;
+    margin: 60px 20px 0;
+  }
+  .highlights .section-center img {
+    max-width: 100%;
+    height: auto;
   }
   .visitor-stats .title {
     font-size: 1.75rem;
@@ -674,6 +719,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 0 26px;
   }
   .visitor-stats .stats-grid .stat-item {
     width: 48%;
@@ -702,6 +748,10 @@ img {
   .buttons-group {
     flex-direction: row;
   }
+  .top-buttons {
+    padding-bottom: 20px;
+    padding-top: 50px;
+  }
 }
 /* 小屏幕设备 (例如，宽度小于 768px) */
 @media (max-width: 767px) {
@@ -713,13 +763,48 @@ img {
     width: 90%;
   }
   .header {
-    height: auto;
-    padding: 100px 0;
+    height: 200px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  p,
+  li,
+  .about-exhibition p,
+  .about-exhibition li,
+  .scale-exhibition p,
+  .scale-exhibition li,
+  .meeting,
+  .highlights,
+  .medicine-info .medicine-word .card p,
+  .medicine-info .medicine-sinopharm .info,
+  .visitor-stats .satisfaction .satisfaction-text p:nth-child(2) {
+    font-size: 0.875rem;
+  }
+  .qr-code {
+    width: 100px;
+    height: 130px;
+    right: 2%;
+  }
+  .section-header h2 {
+    font-size: 1.25rem;
   }
   .cards-grid .card {
     width: 100%;
     height: auto;
     padding: 15px;
+  }
+  .cards-grid .card .card-content h3 {
+    font-size: 1rem;
+  }
+  .cards-grid .card .card-content p {
+    font-size: 0.875rem;
   }
   .scale-exhibition .scale-list {
     flex-direction: column;
@@ -735,15 +820,25 @@ img {
   .meeting .meeting-title {
     margin-right: 0;
     margin-bottom: 15px;
+    font-size: 1.25rem;
   }
   .highlights {
     flex-direction: column;
-    gap: 30px;
   }
   .highlights .section-left,
   .highlights .section-center,
   .highlights .section-right {
     width: 100%;
+  }
+  .highlights .section-center {
+    display: flex;
+    justify-content: center;
+  }
+  .highlights .section-center img {
+    height: 200px;
+  }
+  .highlights .section-left {
+    margin-bottom: 1.8rem;
   }
   .visitor-stats .title {
     font-size: 1.25rem;
@@ -767,6 +862,10 @@ img {
     width: 100%;
     margin-right: 0;
     margin-bottom: 15px;
+    font-size: 1.1rem;
+  }
+  .visitor-stats .satisfaction .satisfaction-text p:nth-child(2) {
+    font-size: 0.875rem;
   }
   .medicine-info .title-f,
   .medicine-info .title-s,
@@ -774,25 +873,80 @@ img {
   .medicine-info .title-f,
   .medicine-info .title-m {
     width: auto;
+    font-size: 0.875rem;
+    padding: 5px 20px;
+    margin: 20px auto 15px;
   }
   .medicine-info .medicine-cards .card {
     width: 100%;
     height: auto;
     padding: 15px;
   }
+  .medicine-info .medicine-cards .card h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
   .medicine-info .medicine-cards .card ul li {
     width: 50% !important;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin-bottom: 3px;
   }
   .medicine-info .medicine-logo {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 1.25rem;
+  }
+  .medicine-info .medicine-logo img {
+    height: 70px;
+    object-fit: contain;
+  }
+  .medicine-info .medicine-content p {
+    padding: 78px 30px 30px 30px;
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+  .medicine-info .medicine-content .text-s {
+    padding: 50px 30px 30px 30px;
+  }
+  .medicine-info .medicine-content .title {
+    font-size: 0.875rem;
+    padding: 8px 15px;
+  }
+  .medicine-info .medicine-word .card {
+    height: auto;
+    padding: 15px 10px 15px 15px;
+  }
+  .medicine-info .medicine-word .card h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .medicine-info .medicine-word .card p {
+    font-size: 0.75rem;
+    line-height: 1.6;
   }
   .medicine-info .medicine-sinopharm {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  .medicine-info .medicine-content p {
-    padding: 78px 30px 30px 30px;
+  .medicine-info .medicine-sinopharm img {
+    margin: 0 auto 1.25rem;
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+  }
+  .medicine-info .medicine-sinopharm .info {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  .buttons-group .button {
+    height: 4.375rem;
+    padding: 0.9375rem;
+    font-size: 0.875rem;
+  }
+  .top-buttons {
+    padding-bottom: 1.25rem;
+    padding-top: 3.125rem;
   }
 }
