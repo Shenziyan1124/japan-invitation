@@ -65,13 +65,30 @@ img {
 }
 
 .qr-code {
-  position: absolute;
-  top: 50px;
+  position: fixed;
+  top: 35%;
   right: 2%;
   z-index: 999;
   width: 220px;
-  height: 260px;
+  background: linear-gradient(133deg, #13B2C7 0%, #083F96 100%);
   border-radius: 15px;
+  padding: 12px 12px 10px;
+
+  font-weight: bold;
+
+  color: #FFFFFF;
+
+  p {
+    margin-top: 10px;
+    font-size: .625rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
 }
 
 /* Section Header */
@@ -162,6 +179,7 @@ img {
 
 .about-exhibition,
 .scale-exhibition {
+
   p,
   li {
     font-weight: bold;
@@ -184,14 +202,12 @@ img {
   text-align: center;
   margin-top: 30px;
 
-  background: linear-gradient(
-    180deg,
-    rgba(129, 97, 175, 0.38) 0%,
-    #463579 29%,
-    #3c2d6f 59%,
-    #3f2e71 79%,
-    rgba(74, 50, 119, 0.38) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(129, 97, 175, 0.38) 0%,
+      #463579 29%,
+      #3c2d6f 59%,
+      #3f2e71 79%,
+      rgba(74, 50, 119, 0.38) 100%);
   padding: 20px;
   font-weight: bold;
   font-size: 1rem;
@@ -484,6 +500,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 250px;
 
     .card {
       width: 100%;
@@ -518,8 +535,11 @@ img {
 
 /* Footer */
 .footer {
-  height: 200px;
-  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background: #b3b3b3;
 }
 
 .buttons-group {
@@ -606,6 +626,7 @@ img {
     .section-center {
       width: 30%;
       margin-top: 30px;
+
       img {
         width: 100%;
       }
@@ -694,6 +715,7 @@ img {
       width: 308px;
     }
   }
+
   .top-buttons {
     padding-bottom: 20px;
     padding-top: 50px;
@@ -708,8 +730,8 @@ img {
 
   .qr-code {
     width: 170px;
-    height: 200px;
     right: 2%;
+
   }
 
   .buttons-group {
@@ -723,6 +745,7 @@ img {
       }
     }
   }
+
   .top-buttons {
     padding-bottom: 20px;
     padding-top: 50px;
@@ -790,6 +813,7 @@ img {
     .section-center {
       width: 30%;
       margin: 30px 0px 0;
+
       img {
         max-width: 100%;
         height: auto;
@@ -819,7 +843,6 @@ img {
 
   .qr-code {
     width: 140px;
-    height: 170px;
     right: 2%;
   }
 
@@ -865,6 +888,7 @@ img {
     .section-center {
       width: 30%;
       margin: 60px 20px 0;
+
       img {
         max-width: 100%;
         height: auto;
@@ -929,6 +953,7 @@ img {
     padding-bottom: 20px;
     padding-top: 50px;
   }
+
 }
 
 /* 小屏幕设备 (例如，宽度小于 768px) */
@@ -974,8 +999,7 @@ img {
   }
 
   .qr-code {
-    width: 100px;
-    height: 130px;
+    width: 120px;
     right: 2%;
   }
 
@@ -1075,6 +1099,7 @@ img {
   }
 
   .medicine-info {
+
     .title-f,
     .title-s,
     .title-t,
@@ -1110,6 +1135,7 @@ img {
       flex-direction: column;
       align-items: center;
       margin-bottom: 1.25rem;
+
       img {
         height: 70px;
         object-fit: contain;
@@ -1154,6 +1180,7 @@ img {
       flex-direction: column;
       align-items: center;
       text-align: center;
+
       img {
         margin: 0 auto 1.25rem;
         width: 140px;
@@ -1175,8 +1202,12 @@ img {
       font-size: 0.875rem;
     }
   }
+
   .top-buttons {
     padding-bottom: 1.25rem;
     padding-top: 3.125rem;
+  }
+    .footer {
+    height: 200px;
   }
 }
